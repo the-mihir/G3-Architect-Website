@@ -293,7 +293,132 @@ li {
 
 }
 
-
 /*===============================================
         End Facts section Style Css
+=================================================*/
+
+
+/*===============================================
+       Partners section Style Css
+=================================================*/
+
+.partners__heading {
+    text-align: center;
+}
+
+.partners__heading p {
+    padding: 30px 0px;
+}
+
+.our__sponsors {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-bottom: 80px;
+}
+
+
+.sponsorship__logo img {
+    width: 150px;
+    filter: grayscale(100%);
+
+}
+
+.sponsorship__logo:hover img {
+    filter: none;
+}
+
+/*===============================================
+       Partners section Style Css
+=================================================*/
+
+/*===============================================
+       footer start Here
+=================================================*/
+
+footer {
+    background-color: var(--dark1);
+    min-height: 400px;
+}
+
+.footer__area {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    column-gap: 50px;
+    margin-bottom: 30px;
+}
+
+.brand__info p {
+    padding: 30px 0;
+}
+
+.button__logo__text {
+    color: var(--white);
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.important__links li {
+    line-height: 26px;
+}
+
+.important__links li a {
+    color: var(--dark3);
+}
+
+.arro-icon {
+    color: var(--dark3);
+    margin-right: 10px;
+}
+
+.fa-brands {
+    border: 1px transparent;
+    padding: 8px;
+    border-radius: 50%;
+    background-color: var(--primary);
+}
+
+.social__icon {
+    color: #fff;
+    font-size: 20px;
+}
+
+
+
+.footer__sub_heading {
+    margin-bottom: 20px;
+    color: #fff;
+    font-weight: 500;
+    font-size: 25px;
+
+}
+
+input[type=email] {
+    width: 100%;
+    padding: 15px 20px;
+    margin: 10px 0;
+    box-sizing: border-box;
+    border-radius: 5px;
+    outline: 3px solid transparent;
+}
+
+input[type=email]:focus {
+    border: 3px solid var(--primary);
+    color: var(--primary);
+    outline: 3px solid transparent;
+}
+
+.footer__bottom {
+    margin-top: 20px;
+    background-color: var(--secondary);
+    min-height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+/*===============================================
+       End footer start Here
 =================================================*/
