@@ -266,10 +266,6 @@ li {
 /*===============================================
         Facts section Style Css
 =================================================*/
-.some__facts {
-    margin-bottom: 100px;
-}
-
 .some__facts_text {
     width: 50%;
     margin: 30px 0px;
