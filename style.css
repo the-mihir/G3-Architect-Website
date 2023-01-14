@@ -32,6 +32,13 @@ h6 {
     color: black;
 }
 
+p {
+    color: var(--dark3);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+}
+
 a {
     text-decoration: none;
 }
@@ -52,15 +59,19 @@ li {
     outline: none;
     border: transparent;
     background-color: var(--primary);
-    margin-top: 17px;
-    margin-bottom: 50px;
-}
-
-.primary__btn a {
     color: var(--white);
     font-size: 20px;
-    font-weight: 600;
+    font-weight: 400;
 }
+
+
+.sub__header {
+    color: var(--dark1);
+    font-weight: 700;
+    font-size: 34px;
+
+}
+
 
 
 /*=======================================
@@ -117,13 +128,12 @@ li {
 }
 
 .hero__section p {
-    font-size: 16px;
     padding: 30px 0;
-    color: var(--dark3);
-    line-height: 26px;
+    margin-bottom: 20px;
 }
 
 .hero__section img {
+    margin-top: 50px;
     width: 100%;
 }
 
@@ -138,9 +148,40 @@ li {
 /*=======================================
         Features Section Style Css
 =========================================*/
+.features {
+    padding: 100px 0px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    column-gap: 30px;
+}
+
+.features__item__img {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.features__item__img img {
+    width: 300px;
+    height: 300px;
+}
+
+.dark_text_header {
+    color: var(--dark3);
+    font-weight: 500;
+}
+
+.color__text {
+    color: var(--primary);
+    text-transform: capitalize;
+}
 
 
-
+.features__item__text p {
+    margin: 30px 0px 45px;
+}
 
 
 
