@@ -43,6 +43,10 @@ a {
     text-decoration: none;
 }
 
+a:link {
+    color: var(--dark3);
+}
+
 ul,
 li {
     list-style: none;
@@ -378,7 +382,7 @@ footer {
     background-color: var(--primary);
 }
 
-.social__icon {
+.social__icon a {
     color: #fff;
     font-size: 20px;
 }
