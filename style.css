@@ -48,6 +48,14 @@ li {
     list-style: none;
 }
 
+.mt {
+    margin-top: 80px;
+}
+
+.pt {
+    padding-top: 80px;
+}
+
 .container {
     max-width: 1140px;
     margin: 0 auto;
@@ -154,13 +162,13 @@ li {
     grid-template-columns: repeat(2, 1fr);
     justify-content: center;
     align-items: center;
-    column-gap: 30px;
+    column-gap: 50px;
 }
 
 .features__item__img {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
+    gap: 15px;
 }
 
 .features__item__img img {
@@ -183,8 +191,80 @@ li {
     margin: 30px 0px 45px;
 }
 
-
-
 /*=======================================
         End Features Section Style Css
 =========================================*/
+
+
+/*===============================================
+        Experience sharing section Style Css
+=================================================*/
+.share__experience {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+}
+
+
+.experience__info h2 {
+    border-left: 5px solid var(--primary);
+    padding-left: 20px;
+    margin-bottom: 30px;
+}
+
+.experience__details {
+    margin-top: 40px;
+}
+
+.experience__info_sub__header {
+    border: 1px solid gray;
+    margin-top: 10px;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.experience__info_sub__header h3 {
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.experience__img img {
+    padding-left: 50px;
+    width: 90%;
+}
+
+.experience__years {
+    position: relative;
+    top: -80px;
+    left: -20px;
+    background-color: var(--primary);
+    text-align: center;
+    padding: 25px;
+    border-radius: 10px;
+    width: 250px;
+    color: var(--white);
+    font-size: 50px;
+}
+
+.experience__years h3 {
+    color: var(--white);
+}
+
+.experience__years>p {
+    color: var(--white);
+}
+
+/*===============================================
+        End Experience sharing section Style Css
+=================================================*/
+
+
+/*===============================================
+        Facts section Style Css
+=================================================*/
+
+
+
+/*===============================================
+        End Facts section Style Css
+=================================================*/
