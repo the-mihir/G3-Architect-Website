@@ -262,7 +262,36 @@ li {
 /*===============================================
         Facts section Style Css
 =================================================*/
+.some__facts {
+    margin-bottom: 100px;
+}
 
+.some__facts_text {
+    width: 50%;
+    margin: 30px 0px;
+}
+
+.facts__counter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 20px 50px;
+
+}
+
+.counter__box {
+    border: 1px solid var(--primary);
+    padding: 50px;
+    border-radius: 8px;
+}
+
+.counter__box h3 {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 50px;
+
+}
 
 
 /*===============================================
