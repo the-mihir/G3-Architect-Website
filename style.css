@@ -1,0 +1,87 @@
+/*==========Google font===========*/
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;700&display=swap');
+
+
+
+/*=======================================
+        Common Design style Css
+=========================================*/
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Work Sans', sans-serif;
+}
+
+:root {
+    --primary: #FF900E;
+    --secondary: #FFF4E7;
+    --dark1: #131313;
+    --dark2: #424242;
+    --dark3: #030202;
+    --white: #faf0e6;
+    --black: #000000;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: black;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+
+
+.container {
+    max-width: 1140px;
+    padding: 50px 0px;
+    margin: 0 auto;
+}
+
+
+/*=======================================
+        Header Menu Style Css
+=========================================*/
+
+.top__header {
+    background-color: var(--secondary);
+    min-height: 100vh;
+}
+
+.main__menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo__text {
+    font-weight: 700;
+    font-size: 35px;
+    color: var(--dark1);
+}
+
+.nav__link li {
+    display: inline;
+    margin-left: 22px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.nav__link li a {
+    color: var(--dark2);
+}
+
+/*=======================================
+        End Header Menu Style Css
+=========================================*/
