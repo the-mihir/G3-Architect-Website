@@ -422,6 +422,8 @@ input[type=email]:focus {
 /* Mobile Responsive start Here  */
 @media screen and (max-width:575px) {
 
+
+
     /* Top section Responsive code */
     .main__menu {
         padding: 30px 10px;
@@ -465,8 +467,8 @@ input[type=email]:focus {
     }
 
     .features__item__img img {
-        width: 400px;
-        height: 400px;
+        width: 350px;
+        height: 350px;
     }
 
     /* share__experience Section Responsive Code   */
