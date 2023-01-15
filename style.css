@@ -33,9 +33,7 @@ a {
     text-decoration: none;
 }
 
-a:link {
-    color: var(--dark3);
-}
+
 
 ul,
 li {
@@ -61,10 +59,12 @@ li {
     outline: none;
     border: transparent;
     background-color: var(--primary);
-    color: var(--white);
     font-size: 20px;
     font-weight: 400;
+    color: #fff;
 }
+
+
 
 .sub__header {
     color: var(--dark1);
@@ -202,6 +202,7 @@ li {
     border-left: 5px solid var(--primary);
     padding-left: 20px;
     margin-bottom: 30px;
+    width: 60%;
 }
 
 .experience__details {
