@@ -567,7 +567,7 @@ input[type=email]:focus {
     }
 
     .partners__heading p {
-        width: 100%;
+        width: 90%;
         padding-left: 15px;
         padding-right: 15px;
     }
