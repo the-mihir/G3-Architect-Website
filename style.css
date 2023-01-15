@@ -91,7 +91,7 @@ li {
 
 .logo__text {
     font-weight: 700;
-    font-size: 35px;
+    font-size: 2rem;
     color: var(--dark1);
 }
 
@@ -104,6 +104,10 @@ li {
 
 .nav__link li a {
     color: var(--dark2);
+}
+
+.breadcam {
+    visibility: hidden;
 }
 
 /*=======================================
@@ -122,11 +126,13 @@ li {
 .hero__section h1 {
     font-size: 64px;
     font-weight: 700;
+
 }
 
 .hero__section p {
-    padding: 30px 0;
-    margin-bottom: 20px;
+    width: 70%;
+    padding: 30px 0 45px;
+    margin: 0 auto;
 }
 
 .hero__section img {
@@ -275,6 +281,16 @@ li {
 
 }
 
+.counter__box img {
+    width: 120px;
+}
+
+.our__sponsors {
+    display: flex;
+
+    flex-direction: column;
+}
+
 /*===============================================
         End Facts section Style Css
 =================================================*/
@@ -395,8 +411,132 @@ input[type=email]:focus {
     justify-content: center;
 }
 
-
-
 /*===============================================
        End footer start Here
 =================================================*/
+
+/*===============================================
+       Responsive CSS start here
+=================================================*/
+
+/* Mobile Responsive start Here  */
+@media screen and (max-width:575px) {
+
+    /* Top section Responsive code */
+    .main__menu {
+        padding: 30px 10px;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .logo__text {
+        font-size: 1.5rem;
+    }
+
+    .breadcam {
+        visibility: visible;
+        font-size: 25px;
+    }
+
+    .hero__section h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero__section p {
+        width: 95%;
+
+    }
+
+    /* Features Section responsive Start Here  */
+    .features {
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 20px 10px;
+    }
+
+
+
+    .features__item__img {
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .features__item__img img {
+        width: 400px;
+        height: 400px;
+    }
+
+    /* share__experience Section Responsive Code   */
+
+    .share__experience {
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        padding: 0px 10px;
+    }
+
+    .experience__img img {
+        padding-left: 0;
+        width: 100%;
+
+    }
+
+    .experience__years {
+        left: 12%;
+    }
+
+    /* Some Facts Responsive Code  */
+
+    .some__facts {
+        padding: 0 10px;
+    }
+
+    .some__facts_text {
+        width: 100%;
+    }
+
+    .facts__counter {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .our__sponsors {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        margin-bottom: 50px;
+    }
+
+    .sponsorship__logo img {
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .footer__area {
+        display: flex;
+        flex-direction: column;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .footer__sub_heading {
+        margin-top: 20px;
+    }
+
+    input[type=email] {
+        width: 80%;
+    }
+
+    .footer__bottom {
+        width: 100%;
+        text-align: center;
+    }
+}
