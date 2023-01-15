@@ -562,9 +562,14 @@ input[type=email]:focus {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 20px;
-
         padding: 10px;
         margin-bottom: 50px;
+    }
+
+    .partners__heading p {
+        width: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
     }
 
     .sponsorship__logo img {
