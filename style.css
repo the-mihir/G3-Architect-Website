@@ -48,6 +48,10 @@ li {
     padding-top: 80px;
 }
 
+.pb {
+    padding-bottom: 80px;
+}
+
 .container {
     max-width: 1140px;
     margin: 0 auto;
@@ -57,12 +61,22 @@ li {
     padding: 18px 25px;
     border-radius: 8px;
     outline: none;
-    border: transparent;
     background-color: var(--primary);
     font-size: 20px;
     font-weight: 400;
     color: #fff;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    transition: background-color linear .2s;
+    border: 2px solid var(--primary);
+
 }
+
+.primary__btn:hover {
+    background-color: var(--secondary);
+    color: var(--dark1);
+    border: 2px solid var(--primary);
+}
+
 
 
 
@@ -70,6 +84,7 @@ li {
     color: var(--dark1);
     font-weight: 700;
     font-size: 34px;
+
 
 }
 
@@ -197,6 +212,10 @@ li {
     gap: 50px;
 }
 
+.share__experience:hover .experience__years {
+    transform: scale(1.1);
+}
+
 
 .experience__info h2 {
     border-left: 5px solid var(--primary);
@@ -210,10 +229,10 @@ li {
 }
 
 .experience__info_sub__header {
-    border: 1px solid gray;
     margin-top: 10px;
     border-radius: 5px;
     padding: 20px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 .experience__info_sub__header h3 {
@@ -237,6 +256,8 @@ li {
     width: 250px;
     color: var(--white);
     font-size: 50px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    transition: transform .8s;
 }
 
 .experience__years h3 {
@@ -260,6 +281,14 @@ li {
     margin: 30px 0px;
 }
 
+.some__facts {
+    padding: 0 10px;
+    background-image: url(./images/10001.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .facts__counter {
     display: flex;
     justify-content: space-between;
@@ -273,6 +302,14 @@ li {
     border: 1px solid var(--primary);
     padding: 50px;
     border-radius: 8px;
+    transition: transform .8s;
+
+
+}
+
+.counter__box:hover {
+    box-shadow: rgba(179, 104, 12, 0.24) 0px 3px 8px;
+    transform: scale(1.1);
 }
 
 .counter__box h3 {
@@ -320,10 +357,12 @@ li {
 .sponsorship__logo img {
     width: 150px;
     filter: grayscale(100%);
+    transition: transform .7s;
 }
 
 .sponsorship__logo:hover img {
     filter: none;
+    transform: scale(1.3);
 }
 
 /*===============================================
@@ -337,6 +376,7 @@ li {
 footer {
     background-color: var(--dark1);
     min-height: 400px;
+
 }
 
 .footer__area {
@@ -344,6 +384,7 @@ footer {
     grid-template-columns: 2fr 1fr 1fr;
     column-gap: 50px;
     margin-bottom: 30px;
+
 }
 
 .brand__info p {
@@ -418,15 +459,16 @@ input[type=email]:focus {
 =================================================*/
 
 /*===============================================
-       Responsive CSS start here
+       Responsive Mobile CSS start here
 =================================================*/
 
-/* Mobile Responsive start Here  */
-@media screen and (max-width:575px) {
 
 
 
-    /* Top section Responsive code */
+/*=========== Mobile Responsive start Here=================*/
+@media only screen and (max-width:686px) {
+
+    /* ===========Top section Responsive code========= */
     .main__menu {
         padding: 30px 10px;
     }
@@ -450,17 +492,19 @@ input[type=email]:focus {
 
     .hero__section p {
         width: 95%;
-
     }
 
-    /* Features Section responsive Start Here  */
+    /* =======Share Experience Area======== */
+    .experience__info h2 {
+        width: 80%;
+    }
+
+    /* ===========Features Section responsive Start Here======  */
     .features {
         display: flex;
         flex-direction: column-reverse;
         padding: 20px 10px;
     }
-
-
 
     .features__item__img {
         margin-top: 50px;
@@ -473,7 +517,7 @@ input[type=email]:focus {
         height: 350px;
     }
 
-    /* share__experience Section Responsive Code   */
+    /*===========share__experience Area============   */
 
     .share__experience {
         margin-top: 30px;
@@ -481,6 +525,8 @@ input[type=email]:focus {
         flex-direction: column;
         padding: 0px 10px;
     }
+
+
 
     .experience__img img {
         padding-left: 0;
@@ -492,10 +538,13 @@ input[type=email]:focus {
         left: 5%;
     }
 
-    /* Some Facts Responsive Code  */
-
+    /*==========Some Facts Area=========  */
     .some__facts {
         padding: 0 10px;
+        background-image: url(./images/10001.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
     }
 
     .some__facts_text {
@@ -508,6 +557,7 @@ input[type=email]:focus {
         gap: 50px;
     }
 
+    /*==========Our SponsorsArea=========  */
     .our__sponsors {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -523,6 +573,7 @@ input[type=email]:focus {
         width: 100%;
     }
 
+    /*==========Footer Area=========  */
     .footer__area {
         display: flex;
         flex-direction: column;
@@ -541,5 +592,94 @@ input[type=email]:focus {
     .footer__bottom {
         width: 100%;
         text-align: center;
+    }
+}
+
+
+/*===============================================
+       Responsive tablet CSS start here
+=================================================*/
+
+@media only screen and (min-width: 687px) and (max-width: 992px) {
+
+    /*==========Menu Area=========  */
+    .main__menu {
+        background-color: #FF900E;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .breadcam {
+        visibility: visible;
+        font-size: 30px;
+    }
+
+    nav {
+        display: none;
+    }
+
+
+    /*==========Features Area=========  */
+    .features {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .features__item__text {
+        padding-top: 50px;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+
+    /*==========Share Experience Area=========  */
+    .share__experience {
+        padding-left: 15px;
+        padding-right: 165px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .experience__details {
+        justify-content: center;
+    }
+
+    .experience__img img {
+        width: 100%;
+    }
+
+    .experience__years {
+        left: 5%;
+    }
+
+
+    /*==========Some Facts Area=========  */
+    .some__facts {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .facts__counter {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+    }
+
+    /*==========Our Sponsors Area=========  */
+    .our__sponsors {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+
+    .sponsorship__logo {
+        text-align: center;
+    }
+
+    /*==========Footer Area=========  */
+    .footer__area {
+        padding-left: 15px;
+        padding-right: 15px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
     }
 }
