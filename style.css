@@ -1,8 +1,6 @@
 /*==========Google font===========*/
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;700&display=swap');
 
-
-
 /*=======================================
         Common Design style Css
 =========================================*/
@@ -23,14 +21,6 @@
     --black: #000000;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    color: black;
-}
 
 p {
     color: var(--dark3);
@@ -76,15 +66,12 @@ li {
     font-weight: 400;
 }
 
-
 .sub__header {
     color: var(--dark1);
     font-weight: 700;
     font-size: 34px;
 
 }
-
-
 
 /*=======================================
         Header Menu Style Css
@@ -123,8 +110,6 @@ li {
         End Header Menu Style Css
 =========================================*/
 
-
-
 /*=======================================
         Hero Section Style Css
 =========================================*/
@@ -152,9 +137,6 @@ li {
 /*=======================================
         End Hero Section Style Css
 =========================================*/
-
-
-
 
 
 /*=======================================
@@ -317,11 +299,9 @@ li {
     padding-bottom: 80px;
 }
 
-
 .sponsorship__logo img {
     width: 150px;
     filter: grayscale(100%);
-
 }
 
 .sponsorship__logo:hover img {
@@ -382,8 +362,6 @@ footer {
     color: #fff;
     font-size: 20px;
 }
-
-
 
 .footer__sub_heading {
     margin-bottom: 20px;
